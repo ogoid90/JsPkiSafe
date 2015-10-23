@@ -1,0 +1,45 @@
+{
+  "name": "ScriptProxy",
+  "version": "1",
+  "description": "This extension checks that the web-pages are digitaly signed by a trusted CA.",
+  "default_locale": "en",
+  "browser_action": {
+    "default_icon": "icon16.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon16.png"
+  },
+  "content_scripts": [
+    {
+        "matches": ["http://*/*", "https://*/*"],
+		"run_at": "document_end",
+        "js": [
+		"jquery-1.11.3.min.js",
+		"jsbn.js", 
+		"jsbn2.js", 
+		"rsa.js", 
+		"rsa2.js", 
+		"base64.js",  
+		"yahoo-min.js",
+		"core.js",
+		"md5.js",
+		"sha1.js",
+		"sha256.js",
+		"ripemd160.js",
+		"x64-core.js",
+		"sha512.js",
+		"rsapem-1.1.js", 
+		"rsasign-1.2.js",
+		"asn1hex-1.1.js",
+		"x509-1.1.js", 
+		"crypto-1.1.js", 
+		"content.js"
+		]
+    }
+  ],
+  "permissions": [
+    "proxy"
+  ],
+  "manifest_version": 2
+}

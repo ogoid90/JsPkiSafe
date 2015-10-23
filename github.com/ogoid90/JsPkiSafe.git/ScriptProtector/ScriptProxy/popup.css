@@ -1,0 +1,23 @@
+body {
+	width: 300px;
+	height: 150px;
+	margin: 10px 10px 10px;
+	background-image: url("http://www.downloadsource.com.br/upload/Screeny/The%20Matrix%20Screensaver1.png");
+}
+
+h1 {
+  color: white;
+  font: 14px/1.2 Helvetica, sans-serif;
+  font-size: 150%;
+  margin: 20px 20px 10px;
+  text-shadow: green 0 1px 2px;
+}
+
+h2 {
+  color: white;
+  font: 10px/1.2 Helvetica, sans-serif;
+  font-size: 90%;
+  margin: 20px 20px 10px;
+  text-align: justify;
+  text-justify: inter-word;
+}
